@@ -61,7 +61,7 @@ Click the item to refresh it. It refreshes by itself every 2 seconds.
 
 ## Install
 
-Download the `.vsix` from the releases and run:
+Download the `.vsix` from the [releases](https://github.com/atep77/claude-context/releases) and run:
 
 ```
 code --install-extension claude-context-<version>.vsix

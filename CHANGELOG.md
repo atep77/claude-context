@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0
+
+- Icon.
+- Publisher is now `atep77` (extension id `atep77.claude-context`); uninstall `pefo.claude-context` after installing this one.
+
 ## 0.3.0
 
 - English and Czech texts (`claudeContext.language`), English README, MIT license.
