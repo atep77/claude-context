@@ -1,0 +1,56 @@
+{
+    "name": "claude-context",
+    "displayName": "%displayName%",
+    "description": "%description%",
+    "version": "0.3.0",
+    "publisher": "pefo",
+    "license": "MIT",
+    "keywords": [ "claude", "claude code", "context", "tokens", "status bar" ],
+    "categories": [ "Other" ],
+    "engines": { "vscode": "^1.90.0" },
+    "main": "./extension.js",
+    "activationEvents": [ "onStartupFinished" ],
+    "contributes": {
+        "commands": [
+            { "command": "claudeContext.refresh", "title": "%command.refresh%" }
+        ],
+        "configuration": {
+            "title": "%displayName%",
+            "properties": {
+                "claudeContext.language": {
+                    "type": "string",
+                    "enum": [ "auto", "en", "cs" ],
+                    "default": "auto",
+                    "description": "%config.language%"
+                },
+                "claudeContext.windows": {
+                    "type": "object",
+                    "default": {},
+                    "description": "%config.windows%"
+                },
+                "claudeContext.defaultWindow": {
+                    "type": "number",
+                    "default": 1000000,
+                    "description": "%config.defaultWindow%"
+                },
+                "claudeContext.warningPercent": { "type": "number", "default": 80, "description": "%config.warningPercent%" },
+                "claudeContext.errorPercent": { "type": "number", "default": 90, "description": "%config.errorPercent%" },
+                "claudeContext.showLimits": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.showLimits%"
+                },
+                "claudeContext.limitsStaleMinutes": {
+                    "type": "number",
+                    "default": 15,
+                    "description": "%config.limitsStaleMinutes%"
+                },
+                "claudeContext.preferVsCodeSession": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "%config.preferVsCodeSession%"
+                }
+            }
+        }
+    }
+}

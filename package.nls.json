@@ -1,0 +1,13 @@
+{
+    "displayName": "Claude Context",
+    "description": "Context window fill of the Claude Code session in the status bar, plus the 5-hour and weekly account limits. Reads local files only.",
+    "command.refresh": "Claude Context: Refresh",
+    "config.language": "Language of the status bar item and its tooltip. 'auto' follows the VS Code display language.",
+    "config.windows": "Context window per model, e.g. { \"claude-haiku-5-5\": 200000 }. Takes precedence over autoCompactWindow in ~/.claude/settings.json.",
+    "config.defaultWindow": "Window for a model without autoCompactWindow and without an entry in windows.",
+    "config.warningPercent": "From what percentage (context or a limit) the item turns yellow.",
+    "config.errorPercent": "From what percentage (context or a limit) the item turns red.",
+    "config.showLimits": "Show the account limits (5 h, 7 days) from ~/.claude/plugins/claude-hud/heartbeat.json. Needs claude-hud; refreshed only while a Claude Code CLI session runs.",
+    "config.limitsStaleMinutes": "After how many minutes without a refresh from the CLI the limits get a question mark.",
+    "config.preferVsCodeSession": "Among the newest sessions of the folder, prefer the one from the VS Code panel over the CLI."
+}

@@ -1,0 +1,13 @@
+{
+    "displayName": "Claude Context",
+    "description": "Zaplnění kontextu relace Claude Code ve stavovém řádku a k tomu pětihodinový a týdenní limit účtu. Čte jen lokální soubory.",
+    "command.refresh": "Claude Context: Obnovit",
+    "config.language": "Jazyk položky ve stavovém řádku a jejího tooltipu. 'auto' se řídí jazykem VS Code.",
+    "config.windows": "Velikost okna podle modelu, např. { \"claude-haiku-5-5\": 200000 }. Má přednost před autoCompactWindow v ~/.claude/settings.json.",
+    "config.defaultWindow": "Okno pro model bez autoCompactWindow a bez záznamu ve windows.",
+    "config.warningPercent": "Od kolika % (kontext nebo limit) je položka žlutá.",
+    "config.errorPercent": "Od kolika % (kontext nebo limit) je položka červená.",
+    "config.showLimits": "Ukázat limity účtu (5 h, 7 dní) z ~/.claude/plugins/claude-hud/heartbeat.json. Potřebuje claude-hud; obnovují se jen během CLI Claude Code.",
+    "config.limitsStaleMinutes": "Po kolika minutách bez obnovení z CLI dostanou limity otazník.",
+    "config.preferVsCodeSession": "Mezi posledními relacemi složky dát přednost té z panelu VS Code před CLI."
+}
